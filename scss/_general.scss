@@ -1,0 +1,25 @@
+* {
+  font-family: 'Roboto', sans-serif;
+}
+.body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  background: #000000;
+}
+.container {
+  padding: 0;
+  margin: 0 auto;
+  width: 100%;
+  max-width: calc(100% - 40px);
+  @media screen and (min-width: $screen-xl) {
+    max-width: calc(100% - 200px);
+  }
+}
+.section_front-page-intro {
+  margin-top: 140px;
+  @media screen and (min-width: $screen-xl) {
+    margin-top: 250px;
+  }
+}
