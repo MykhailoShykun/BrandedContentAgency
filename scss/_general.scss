@@ -23,3 +23,9 @@
     margin-top: 250px;
   }
 }
+.section_front-page-about-us {
+  margin-top: 60px;
+  @media screen and (min-width: $screen-xl) {
+    margin-top: 140px;
+  }
+}
