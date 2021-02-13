@@ -8,7 +8,7 @@
     <?php wp_head(); ?>
 </head>
 <body class="body">
-<header class="header">
+<header class="header <?php if (is_front_page()) { echo 'front-page'; } ?>">
     <div class="container">
         <a href="<?= home_url() ?>" class="logotype-wrapper">
             <img src="<?php

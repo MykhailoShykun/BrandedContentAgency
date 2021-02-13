@@ -1,0 +1,11 @@
+.front-page-load {
+  display: block;
+  width: 100%;
+  height: 400px;
+  background-color: rgba(0, 0, 0, 1);
+  transition: 6s background-color, 3s height;
+  &.hide {
+    height: 0;
+    background-color: rgba(0, 0, 0, 0);
+  }
+}
