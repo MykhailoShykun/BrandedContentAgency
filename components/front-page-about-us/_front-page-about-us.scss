@@ -4,6 +4,12 @@
     height: 40px;
     overflow: hidden;
     margin-bottom: 60px;
+    &:last-child  {
+      margin-bottom: 50px;
+      .marquee__inner {
+        animation: marquee-reverse 25s linear infinite;
+      }
+    }
   }
   .marquee__inner {
     display: flex;
@@ -13,7 +19,7 @@
     width: fit-content;
     white-space: nowrap;
     will-change: transform;
-    animation: marquee 10s linear infinite;
+    animation: marquee 25s linear infinite;
   }
   .circle {
     position: relative;
@@ -29,8 +35,8 @@
       top: 50%;
       left: 50%;
       transform: translate(-50%, -50%);
-      height: 37.5px;
-      width: 37.5px;
+      height: 37px;
+      width: 37px;
       background: #000000;
       border-radius: 50%;
     }
@@ -51,5 +57,92 @@
     font-size: 18px;
     line-height: 21px;
     color: #D3D3D3;
+  }
+  .button-wrapper {
+    position: relative;
+    display: block;
+    width: 90px;
+    height: 90px;
+    margin: 0 auto 70px;
+    &:after {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      display: block;
+      width: 24px;
+      height: 1px;
+      background: #000000;
+      z-index: 1;
+    }
+    &:before {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      content: '';
+      display: block;
+      width: 1px;
+      height: 24px;
+      background: #000000;
+      z-index: 1;
+    }
+  }
+  .button__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    animation: rotation 10s infinite linear;
+  }
+  @media screen and (min-width: $screen-xl) {
+    > .container {
+      position: relative;
+      padding-bottom: 270px;
+    }
+    .marquee {
+      height: 78px;
+      margin-bottom: 140px;
+      &:last-child  {
+        margin-bottom: 130px;
+      }
+    }
+    .circle {
+      width: 78px;
+      height: 78px;
+      margin-right: 21px;
+      &:after {
+        height: 74px;
+        width: 74px;
+      }
+    }
+    hr {
+      margin: 0 0 50px;
+    }
+    .text-block {
+      margin: 0;
+      padding: 0;
+      font-size: 24px;
+      line-height: 28px;
+      color: #FFFFFF;
+      width: 70%;
+      max-width: 966px;
+    }
+    .button-wrapper {
+      position: absolute;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 198px;
+      height: 198px;
+      margin: 0;
+      &:after {
+        width: 57px;
+      }
+      &:before {
+        height: 57px;
+      }
+    }
   }
 }
