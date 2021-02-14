@@ -54,3 +54,9 @@
     margin-top: 140px;
   }
 }
+.section_archive-posts-list {
+  padding: 175px 0 132px;
+  @media screen and (min-width: $screen-xl) {
+    padding: 375px 0 123px;
+  }
+}
