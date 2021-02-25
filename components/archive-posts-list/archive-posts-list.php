@@ -30,7 +30,7 @@
                 </div>
             <?php } ?>
         </div>
-        <img src="<?= get_template_directory_uri(); ?>/img/dest/arrow-to-the-top.png" alt="to the top" class="arrow-to-top">
+        <img src="<?= get_template_directory_uri(); ?>/img/dest/arrow-to-the-top-grey.svg" alt="to the top" class="arrow-to-top">
         <script>
             let arrow = document.querySelector('.arrow-to-top');
 

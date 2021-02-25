@@ -1,10 +1,23 @@
 <section class="section section_front-page-about-us">
     <div class="front-page-about-us">
-        <div class="marquee">
-            <div class="marquee__inner">
-	            <?php for ($i = 0; $i < 50; $i++) { ?>
-                    <div class="circle"></div>
-	            <?php } ?>
+        <div class="marquee-wrapper">
+            <div class="pacman-wrapper">
+                <div class="pacman__content">
+                    <div class="pacman__inner">
+                        <img src="<?= get_template_directory_uri(); ?>/img/dest/ghosts.svg" alt="ghosts" class="ghosts">
+                        <div class="pacman-block">
+                            <img src="<?= get_template_directory_uri(); ?>/img/dest/packman.svg" alt="pacman" class="pacman">
+                            <div class="black-block"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="marquee">
+                <div class="marquee__inner">
+			        <?php for ($i = 0; $i < 50; $i++) { ?>
+                        <div class="circle"></div>
+			        <?php } ?>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -20,11 +33,24 @@
 	            <?php } ?>
             </a>
         </div>
-        <div class="marquee">
-            <div class="marquee__inner">
-			    <?php for ($i = 0; $i < 50; $i++) { ?>
-                    <div class="circle"></div>
-			    <?php } ?>
+        <div class="marquee-wrapper">
+            <div class="pacman-wrapper">
+                <div class="pacman__content">
+                    <div class="pacman__inner">
+                        <div class="pacman-block">
+                            <div class="black-block"></div>
+                            <img src="<?= get_template_directory_uri(); ?>/img/dest/packman.svg" alt="pacman" class="pacman">
+                        </div>
+                        <img src="<?= get_template_directory_uri(); ?>/img/dest/ghosts.svg" alt="ghosts" class="ghosts">
+                    </div>
+                </div>
+            </div>
+            <div class="marquee">
+                <div class="marquee__inner">
+				    <?php for ($i = 0; $i < 50; $i++) { ?>
+                        <div class="circle"></div>
+				    <?php } ?>
+                </div>
             </div>
         </div>
     </div>

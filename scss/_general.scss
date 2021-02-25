@@ -39,7 +39,8 @@
   width: 100%;
   max-width: calc(100% - 40px);
   @media screen and (min-width: $screen-xl) {
-    max-width: calc(100% - 200px);
+    width: calc(100% - 200px);
+    max-width: 1280px;
   }
 }
 .section_front-page-intro {
@@ -51,12 +52,52 @@
 .section_front-page-about-us {
   margin-top: 60px;
   @media screen and (min-width: $screen-xl) {
-    margin-top: 140px;
+    margin-top: unset;
   }
 }
 .section_archive-posts-list {
-  padding: 175px 0 132px;
+  padding: 175px 0 50px;
   @media screen and (min-width: $screen-xl) {
-    padding: 375px 0 123px;
+    padding: 300px 0 50px;
   }
+}
+.section_front-page-what-we-do {
+  @media screen and (min-width: $screen-xl) {
+    padding-top: 150px;
+  }
+}
+.section_thumbnail {
+  margin-top: 60px;
+  position: relative;
+  height: 520px;
+  width: 100%;
+}
+.section_single-content {
+  padding: 60px 0 50px;
+}
+.swiper-slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.swiper-pagination {
+  position: initial;
+  margin-bottom: 30px;
+  .swiper-pagination-bullet {
+    width: 6px;
+    height: 6px;
+    margin-right: 10px;
+    opacity: 1;
+    background: rgba(255, 255, 255, 0.4);
+    &:last-child {
+      margin-right: unset;
+    }
+  }
+  .swiper-pagination-bullet-active {
+    background: #ffffff;
+  }
+}
+.swiper-image {
+  width: calc(100% - 40px);
+  object-fit: contain;
 }

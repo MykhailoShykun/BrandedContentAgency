@@ -100,17 +100,17 @@
   @media screen and (min-width: $screen-xl) {
     .title {
       b {
-        max-width: 950px;
-        font-size: 180px;
-        line-height: 135px;
+        max-width: 780px;
+        font-size: 144px;
+        line-height: 120px;
         &:first-child {
           padding-left: 126px;
         }
       }
       i {
-        max-width: 950px;
-        font-size: 180px;
-        line-height: 135px;
+        max-width: 780px;
+        font-size: 144px;
+        line-height: 120px;
         padding-left: 126px;
       }
     }
@@ -123,7 +123,7 @@
     }
     .play-button-wrapper {
       position: absolute;
-      bottom: 277px;
+      bottom: -87px;
       left: 8.75%;
       width: 164px;
       height: 164px;
@@ -136,13 +136,14 @@
     }
     .text-block {
       width: 80%;
-      max-width: 966px;
+      max-width: 663px;
       margin: 0;
       transform: translateY(-236px);
-      padding: 100px;
+      padding: 50px;
       background: #000000;
-      font-size: 48px;
-      line-height: 56px;
+      font-weight: 900;
+      font-size: 30px;
+      line-height: 35px;
     }
     > .container {
       &:last-child {

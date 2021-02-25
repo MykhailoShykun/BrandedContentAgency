@@ -1,4 +1,4 @@
-<section class="section section_front-page-what-we-do" style="padding-bottom: 200px">
+<section class="section section_front-page-what-we-do">
     <div class="front-page-what-we-do">
         <div class="container">
             <h2 class="title">WHAT WE DO?</h2>

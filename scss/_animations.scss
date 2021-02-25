@@ -15,4 +15,13 @@
   from { transform: translateX(-50%); }
   to { transform: translateX(0%); }
 }
+
+@keyframes move-pacman-first {
+  from { left:  100vw}
+  to { left:  -150vw}
+}
+@keyframes move-pacman-second {
+  from { left:  -150vw}
+  to { left:  100vw}
+}
 // ANIMATIONS
