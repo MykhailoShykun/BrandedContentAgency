@@ -21,7 +21,10 @@
     display: block;
     width: 45px;
     height: 45px;
-    transition: 3s height, 3s width;
+    transition: 3s height, 3s width, .3s opacity;
+    &.hide {
+      opacity: 0;
+    }
   }
   .logotype {
     width: 100%;
@@ -50,6 +53,10 @@
     font-weight: normal;
     font-size: 13px;
     line-height: 15px;
+    transition: .3s opacity;
+    &.hide {
+      opacity: 0;
+    }
   }
   .hamburger {
     display: flex;
@@ -60,6 +67,10 @@
     width: fit-content;
     margin-left: 20px;
     cursor: pointer;
+    transition: .3s transform;
+    &.rotate {
+      transform: rotate(90deg);
+    }
   }
   .hamburger__span {
     display: block;
@@ -79,42 +90,28 @@
     }
   }
   @media screen and (min-width: $screen-xl) {
-    min-height: 150px;
+    min-height: 100px;
     .logotype-wrapper {
-      width: 85px;
-      height: 85px;
+      width: 75px;
+      height: 75px;
     }
     .start-project {
       position: relative;
-      width: 212px;
-      padding: 20px;
-      background: unset;
-      overflow: hidden;
+      width: 172px;
+      padding: 13px;
+      background-color: rgba(255, 255, 255, 0.15);
+      border-radius: 33px;
       color: #ffffff;
-      font-size: 24px;
-      line-height: 28px;
-      &::after {
-        content: '';
-        display: block;
-        height: 68px;
-        width: 68px;
-        position: absolute;
-        left: 0;
-        top: 50%;
-        transition: .4s transform;
-        transform: translateY(-50%);
-        border-radius: 50%;
-        background: rgba(255, 255, 255, 0.4);
-      }
+      font-size: 18px;
+      line-height: 21px;
+      transition: background-color .2s;
       &:hover {
-        &::after {
-          transform: translateY(-50%) scaleX(20);
-        }
+        background-color: rgba(255, 255, 255, 0.3);
       }
     }
     .hamburger {
-      height: 41px;
-      margin-left: 125px;
+      height: 38px;
+      margin-left: 100px;
     }
     .hamburger__span {
       display: block;

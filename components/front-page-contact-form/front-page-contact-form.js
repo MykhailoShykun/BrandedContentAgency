@@ -14,7 +14,6 @@ let scene = new ScrollMagic.Scene({
 })
     .setPin('.section_animation')
     .setTween(timeline)
-    .addIndicators()
     .addTo(controller)
     .on('end', () => {
         let circle = document.querySelector('.animated-circle');

@@ -33,6 +33,7 @@
         </div>
     </div>
 </header>
+<?php get_template_part('components/overlay-menu/overlay-menu'); ?>
 <script>
     let themePath = '<?= get_template_directory_uri() ?>';
 </script>

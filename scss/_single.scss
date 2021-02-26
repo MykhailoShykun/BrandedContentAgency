@@ -24,13 +24,14 @@
   text-transform: uppercase;
 }
 .single-return-button__wrapper {
-  position: absolute;
-  top: 20px;
+  position: fixed;
+  top: 80px;
   right: 20px;
   display: block;
   width: 48px;
   height: 48px;
   cursor: pointer;
+  z-index: 9999;
 }
 .single-return-button {
   display: block;
@@ -44,4 +45,37 @@
   font-size: 18px;
   line-height: 21px;
   color: #D3D3D3;
+  .single-return-button__wrapper {
+    display: none;
+  }
+  @media screen and (min-width: $screen-xl) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    padding: 0 100px 50px 50px;
+    background: rgba(0, 0, 0, 0.63);
+    font-size: 24px;
+    line-height: 28px;
+    .single-return-button__wrapper {
+      display: block;
+      position: initial;
+      width: 84px;
+      height: 84px;
+      margin: 0 0 45px;
+      padding: 0;
+      align-self: flex-end;
+    }
+  }
+}
+@media screen and (min-width: $screen-xl) {
+  .single__title {
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 75px;
+    max-width: 552px;
+  }
 }
