@@ -26,7 +26,7 @@
                         </ul>
                     </div>
                 </div>
-                <img src="<?= get_template_directory_uri(); ?>/img/dest/arrow-to-the-top.svg" alt="to the top" class="return-to-the-top">
+                <img id="contact-form" src="<?= get_template_directory_uri(); ?>/img/dest/arrow-to-the-top.svg" alt="to the top" class="return-to-the-top">
             </div>
         </div>
     </div>

@@ -109,6 +109,12 @@
     }
   }
 }
+.section_about {
+  padding: 180px 0 50px;
+  @media screen and (min-width: $screen-xl) {
+    padding: 190px 0 50px;
+  }
+}
 .swiper-container__wrapper {
   @media screen and (min-width: $screen-xl) {
     position: absolute;

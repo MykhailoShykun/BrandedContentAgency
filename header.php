@@ -24,7 +24,7 @@
 		    ?>" alt="logotype" class="logotype">
         </a>
         <div class="right-side">
-            <a href="#" class="start-project">начать проект</a>
+            <a href="<?= home_url(); ?>#contact-form" class="start-project">начать проект</a>
             <div class="hamburger">
                 <span class="hamburger__span"></span>
                 <span class="hamburger__span"></span>

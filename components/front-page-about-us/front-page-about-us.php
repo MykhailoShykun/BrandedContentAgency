@@ -25,7 +25,7 @@
             <hr>
                 With krug agency, your dream goes far beyond the limits of the imagination. With unequalled passion we break new ground to make a moment last a lifetime. With dazzling stories, technology, and artistry, we connect people and emotions to places.
             </div>
-            <a href="#" class="button-wrapper">
+            <a href="<?= get_page_link(35) ?>" class="button-wrapper">
 	            <?php if (wpmd_is_device()) { ?>
                     <img src="<?= get_template_directory_uri(); ?>/img/dest/more-about-us_mobile.png" alt="more about us" class="button__image">
 	            <?php } else { ?>
