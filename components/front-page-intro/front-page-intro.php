@@ -11,17 +11,10 @@
             <video class="video" autoplay muted loop playsinline>
                 <source src="http://kulik.inkdesign.studio/wp-content/uploads/2021/02/gordon.mp4" type="video/mp4" />
             </video>
-            <?php if (wpmd_is_device()) { ?>
-                <div class="play-button-wrapper">
-                    <img src="<?= get_template_directory_uri(); ?>/img/dest/play-showreel_mobile.png" alt="play" class="play-button play-button_mobile">
-                    <img src="<?= get_template_directory_uri(); ?>/img/dest/play-showreel-triangle_mobile.jpg" alt=">" class="play-button__triangle play-button__triangle_mobile">
-                </div>
-            <?php } else { ?>
-                <div class="play-button-wrapper">
-                    <img src="<?= get_template_directory_uri(); ?>/img/dest/play-showreel_desktop.png" alt="play" class="play-button play-button_desktop">
-                    <img src="<?= get_template_directory_uri(); ?>/img/dest/play-showreel-triangle_mobile.jpg" alt=">" class="play-button__triangle play-button__triangle_mobile">
-                </div>
-            <?php } ?>
+            <div class="play-button-wrapper">
+                <img src="<?= get_template_directory_uri(); ?>/img/dest/play.svg" alt="play" class="play-button play-button_desktop">
+                <img src="<?= get_template_directory_uri(); ?>/img/dest/play-triangle.svg" alt=">" class="play-button__triangle play-button__triangle_mobile">
+            </div>
         </div>
         <div class="container">
             <p class="text-block">We create unforgettable memories through multi-sensorial experiences. We create unforgettable memories through multi-sensorial experiences.We create unforgettable memories through multi-sensorial experiences.We create unforgettable memories through multi-sensorial</p>

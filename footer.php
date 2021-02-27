@@ -34,6 +34,7 @@
     <script src="<?= get_template_directory_uri(); ?>/components/front-page-about-us/front-page-about-us.js"></script>
     <script src="<?= get_template_directory_uri(); ?>/components/front-page-contact-form/front-page-contact-form.js"></script>
 <?php } if (is_single()) { ?>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox-plus-jquery.min.js" integrity="sha512-6gudNVbNM/cVsLUMOb8g2b/RBqtQJ3aDfRFgU+5paeaCTtbYY/Dg00MzZq7r6RvJGI2KKtPBhjkHGTL/iOe21A==" crossorigin="anonymous"></script>
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="<?= get_template_directory_uri(); ?>/js/single.js"></script>
 <?php } wp_footer(); ?>

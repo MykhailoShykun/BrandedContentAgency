@@ -10,11 +10,7 @@
                         <img src="<?= get_template_directory_uri(); ?>/img/dest/thumbnail-sample.jpg" alt="thumbnail" class="thumbnail">
                         <a href="#" class="button-wrapper">
                             <span class="button-wrapper__inner">
-		                    <?php if (wpmd_is_device()) { ?>
-                                <img src="<?= get_template_directory_uri(); ?>/img/dest/more-about-us_mobile.png" alt="more about us" class="button__image">
-		                    <?php } else { ?>
-                                <img src="<?= get_template_directory_uri(); ?>/img/dest/more-about-us_desktop.png" alt="more about us" class="button__image">
-		                    <?php } ?>
+                                <img src="<?= get_template_directory_uri(); ?>/img/dest/more-about-us.svg" alt="more about us" class="button__image">
                             </span>
                         </a>
                     </div>

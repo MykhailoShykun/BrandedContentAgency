@@ -9,18 +9,18 @@
             <div class="container">
                 <div class="blocks-wrapper">
                     <div class="block">
-                        <h2 class="contact-form__title">Contact us</h2>
+                        <h2 class="contact-form__title">Связаться с нами</h2>
 						<?php echo do_shortcode('[contact-form-7 id="21" title="Контактная форма"]'); ?>
                     </div>
                     <div class="block">
                         <ul class="block__inner">
-                            <li class="block__item block__item_title">Socials</li>
+                            <li class="block__item block__item_title">Соц. сети</li>
                             <li class="block__item"><a href="#" class="block__link">Facebook</a></li>
                             <li class="block__item"><a href="#" class="block__link">Facebook</a></li>
                             <li class="block__item"><a href="#" class="block__link">Facebook</a></li>
                         </ul>
                         <ul class="block__inner">
-                            <li class="block__item block__item_title">Contacts</li>
+                            <li class="block__item block__item_title">Контакты</li>
                             <li class="block__item"><a href="#" class="block__link">+38 000 000 00 00</a></li>
                             <li class="block__item"><a href="#" class="block__link">hello@gmail.com</a></li>
                         </ul>

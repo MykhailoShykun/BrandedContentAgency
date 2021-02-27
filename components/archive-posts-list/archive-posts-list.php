@@ -4,17 +4,10 @@
             <h1 class="title">DESIGN</h1>
             <div class="thumbnail-wrapper">
                 <img src="<?= get_template_directory_uri(); ?>/img/dest/thumbnail-sample.jpg" alt="thumbnail" class="main-post__thumbnail">
-                <?php if (wpmd_is_device()) { ?>
-                    <div class="button-wrapper">
-                        <img src="<?= get_template_directory_uri(); ?>/img/dest/new_mobile.png" alt="new" class="button__image">
-                        <img src="<?= get_template_directory_uri(); ?>/img/dest/new-triangle_mobile.jpg" alt=">" class="button__triangle">
-                    </div>
-                <?php } else { ?>
-                    <div class="button-wrapper">
-                        <img src="<?= get_template_directory_uri(); ?>/img/dest/new_desktop.png" alt="new" class="button__image">
-                        <img src="<?= get_template_directory_uri(); ?>/img/dest/new-triangle_mobile.jpg" alt=">" class="button__triangle">
-                    </div>
-                <?php } ?>
+                <div class="button-wrapper">
+                    <img src="<?= get_template_directory_uri(); ?>/img/dest/play_white.svg" alt="new" class="button__image">
+                    <img src="<?= get_template_directory_uri(); ?>/img/dest/play-triangle_black.svg" alt=">" class="button__triangle">
+                </div>
             </div>
             <div class="container">
                 <p class="main-post__title">Название Проекта</p>

@@ -21,9 +21,10 @@
     display: block;
     width: 45px;
     height: 45px;
-    transition: 3s height, 3s width, .3s opacity;
+    transition: .3s opacity;
     &.hide {
       opacity: 0;
+      pointer-events: none;
     }
   }
   .logotype {
@@ -56,6 +57,7 @@
     transition: .3s opacity;
     &.hide {
       opacity: 0;
+      pointer-events: none;
     }
   }
   .hamburger {
