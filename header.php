@@ -28,7 +28,12 @@
         </div>
     </div>
 </header>
-<?php get_template_part('components/overlay-menu/overlay-menu'); ?>
+<?php
+    get_template_part('components/overlay-menu/overlay-menu');
+    if (is_front_page()) {
+	    get_template_part( 'components/preloader/preloader' );
+    }
+?>
 <script>
     let themePath = '<?= get_template_directory_uri() ?>';
 </script>
