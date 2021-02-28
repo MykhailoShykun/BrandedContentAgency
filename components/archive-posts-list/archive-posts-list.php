@@ -66,7 +66,9 @@ if (is_home()) {
                 while ($mypost_Query->have_posts()) {
                     $mypost_Query->the_post(); ?>
                 <div class="post">
+                    <a href="<?= the_permalink(); ?>" class="thumbnail-wrapper">
 	                <?= the_post_thumbnail('medium', array('class' => 'post__thumbnail')); ?>
+                    </a>
                     <a href="<?= the_permalink(); ?>" class="post__title"><?= the_title(); ?></a>
                     <p class="post__subtitle"><?= get_the_excerpt($post->ID); ?></p>
                 </div>
