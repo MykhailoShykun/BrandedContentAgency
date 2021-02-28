@@ -26,12 +26,20 @@ window.addEventListener('load', () => {
         pagination: {
             el: '.swiper-pagination_mobile',
         },
+        navigation: {
+            nextEl: '#next-mobile',
+            prevEl: '#prev-mobile',
+        },
         breakpoints: {
             1200: {
                 slidesPerView: 2,
                 spaceBetween: '50px',
                 pagination: {
                     el: '.swiper-pagination_desktop',
+                },
+                navigation: {
+                    nextEl: '#next-desktop',
+                    prevEl: '#prev-desktop',
                 },
             }
         }

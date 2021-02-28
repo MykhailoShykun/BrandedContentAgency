@@ -41,7 +41,7 @@ for (let i = 0; i < categoriesTitles.length; i++) {
 let categoriesSubtitles = document.querySelectorAll('.front-page-what-we-do .item__subtitle');
 for (let i = 0; i < categoriesSubtitles.length; i++) {
     new ScrollMagic.Scene({
-        triggerElement: categoriesSubtitles[i], triggerHook: .6
+        triggerElement: categoriesTitles[i], triggerHook: .6
     })
         .setClassToggle(categoriesSubtitles[i], "_reveal") // add class toggle
         .reverse(false)

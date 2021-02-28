@@ -52,7 +52,7 @@ if (is_home()) {
             <div class="thumbnail-wrapper">
 	            <?= get_the_post_thumbnail( $featuredPost->ID, 'large', array('class' => 'main-post__thumbnail')); ?>
                 <a href="<?= get_permalink($featuredPost) ?>" class="button-wrapper">
-                    <img src="<?= get_template_directory_uri(); ?>/img/dest/play_white.svg" alt="new" class="button__image">
+                    <img src="<?= get_template_directory_uri(); ?>/img/dest/enter.svg" alt="new" class="button__image">
                     <img src="<?= get_template_directory_uri(); ?>/img/dest/play-triangle_black.svg" alt=">" class="button__triangle">
                 </a>
             </div>
