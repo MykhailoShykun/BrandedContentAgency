@@ -29,6 +29,10 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TimelineMax.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/CSSPlugin.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/plugins/BezierPlugin.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
     <script src="<?= get_template_directory_uri(); ?>/js/front-page.js"></script>
     <script src="<?= get_template_directory_uri(); ?>/components/front-page-intro/front-page-intro.js"></script>
     <script src="<?= get_template_directory_uri(); ?>/components/front-page-about-us/front-page-about-us.js"></script>

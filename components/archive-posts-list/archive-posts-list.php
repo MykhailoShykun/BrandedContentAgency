@@ -1,28 +1,54 @@
 <?php
-$cat_id = 2;
-if (!empty(get_field('archive-main-post', $post_id))) {
-    $featuredPost = get_field('archive-main-post', $post_id);
-	$mypost_Query = new WP_Query( array(
-		'post_type'=>'post',
-		'post_status'=>'publish',
-		'orderby'=>'date',
-		'cat'=>$cat_id,
-        'post__not_in'=>[$featuredPost->ID]
-	));
-} else {
-	$mypost_Query = new WP_Query( array(
-		'post_type'=>'post',
-		'post_status'=>'publish',
-		'orderby'=>'date',
-		'cat'=>$cat_id
-	));
-	$featuredPost = $mypost_Query->posts[0];
+if (is_home()) {
+    $cat_id = 2;
+	$title = get_the_title(32);
+    if (!empty(get_field('archive-main-post', $post_id))) {
+        $featuredPost = get_field('archive-main-post', $post_id);
+        $mypost_Query = new WP_Query( array(
+            'post_type'=>'post',
+            'post_status'=>'publish',
+            'orderby'=>'date',
+            'cat'=>$cat_id,
+            'post__not_in'=>[$featuredPost->ID]
+        ));
+    } else {
+        $mypost_Query = new WP_Query( array(
+            'post_type'=>'post',
+            'post_status'=>'publish',
+            'orderby'=>'date',
+            'cat'=>$cat_id
+        ));
+        $featuredPost = $mypost_Query->posts[0];
+    }
+} elseif (is_archive()) {
+	$cat_id = getCurrentCatID();
+	$id = strval($cat_id);
+	$cat = 'category_' . $id;
+	$title = get_cat_name($cat_id);
+	if (!empty(get_field('archive-main-post', $cat))) {
+		$featuredPost = get_field('archive-main-post', $cat);
+		$mypost_Query = new WP_Query( array(
+			'post_type'=>'post',
+			'post_status'=>'publish',
+			'orderby'=>'date',
+			'cat'=>$cat_id,
+			'post__not_in'=>[$featuredPost->ID]
+		));
+	} else {
+		$mypost_Query = new WP_Query( array(
+			'post_type'=>'post',
+			'post_status'=>'publish',
+			'orderby'=>'date',
+			'cat'=>$cat_id
+		));
+		$featuredPost = $mypost_Query->posts[0];
+	}
 }
 ?>
 <section class="section section_archive-posts-list">
     <div class="archive-posts-list">
         <div class="main-post">
-            <h1 class="title"><?= get_the_title(32); ?></h1>
+            <h1 class="title"><?= $title ?></h1>
             <div class="thumbnail-wrapper">
 	            <?= get_the_post_thumbnail( $featuredPost->ID, 'large', array('class' => 'main-post__thumbnail')); ?>
                 <a href="<?= get_permalink($featuredPost) ?>" class="button-wrapper">

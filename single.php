@@ -2,7 +2,6 @@
 $post_id = get_the_ID();
 $gallery = acf_photo_gallery('single-gallery',$post_id);
 $videos = get_post_meta($post_id, 'wpcf-single-video');
-var_dump($videos);
 ?>
 <main class="main">
 	<section class="section section_thumbnail">

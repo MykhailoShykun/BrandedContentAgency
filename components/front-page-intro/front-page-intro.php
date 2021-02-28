@@ -19,7 +19,9 @@
         <?php if (!empty(get_the_content($post_id))) { ?>
         <div class="container">
             <div class="text-block">
-                <?= get_the_content($post_id); ?>
+                <div class="text-wrapper" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+	                <?= get_the_content($post_id); ?>
+                </div>
             </div>
         </div>
         <?php } ?>

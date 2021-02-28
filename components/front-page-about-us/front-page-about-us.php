@@ -23,7 +23,9 @@
         <div class="container">
             <div class="text-block">
             <hr>
-                <?= get_field('front-more-about-us', $post_id) ?>
+                <div class="text-wrapper" data-aos="fade-up" data-aos-duration="500" data-aos-once="true">
+	                <?= get_field('front-more-about-us', $post_id) ?>
+                </div>
             </div>
             <a href="<?= get_page_link(35) ?>" class="button-wrapper">
                 <img src="<?= get_template_directory_uri(); ?>/img/dest/more-about-us.svg" alt="more about us" class="button__image">

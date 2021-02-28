@@ -9,8 +9,9 @@
     <?php if (is_single()) { ?>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css" />
         <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
-    <?php } ?>
-    <?php wp_head(); ?>
+    <?php } elseif (is_front_page()) { ?>
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <?php } wp_head(); ?>
 </head>
 <body class="body">
 <header class="header">
