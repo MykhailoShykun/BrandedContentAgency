@@ -23,7 +23,7 @@
         <div class="container">
             <div class="text-block">
             <hr>
-                With krug agency, your dream goes far beyond the limits of the imagination. With unequalled passion we break new ground to make a moment last a lifetime. With dazzling stories, technology, and artistry, we connect people and emotions to places.
+                <?= get_field('front-more-about-us', $post_id) ?>
             </div>
             <a href="<?= get_page_link(35) ?>" class="button-wrapper">
                 <img src="<?= get_template_directory_uri(); ?>/img/dest/more-about-us.svg" alt="more about us" class="button__image">

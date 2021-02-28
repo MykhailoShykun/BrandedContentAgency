@@ -1,5 +1,8 @@
 <?php get_header();
 $post_id = get_the_ID();
+$gallery = acf_photo_gallery('single-gallery',$post_id);
+$videos = get_post_meta($post_id, 'wpcf-single-video');
+var_dump($videos);
 ?>
 <main class="main">
 	<section class="section section_thumbnail">
@@ -13,12 +16,12 @@ $post_id = get_the_ID();
         <div class="swiper-container__wrapper">
             <div class="swiper-container">
                 <div class="swiper-wrapper">
-			        <?php for ($i = 0; $i < 5; $i++) { ?>
-                        <a href="<?= get_template_directory_uri(); ?>/img/dest/thumbnail-sample.jpg" data-lightbox="gallery" class="swiper-slide">
-                            <img src="<?= get_template_directory_uri(); ?>/img/dest/thumbnail-sample.jpg" alt="image"
+			        <?php foreach ($gallery as $photo) { ?>
+                        <a href="<?= $photo['full_image_url']; ?>" data-lightbox="gallery-<?= $photo['id'] ?>" class="swiper-slide">
+                            <img src="<?= $photo['thumbnail_image_url']; ?>" alt="image"
                                  class="swiper-image">
                         </a>
-			        <?php } ?>
+			        <?php } foreach ($videos as $video) { ?>
                     <div class="swiper-slide swiper-slide_video">
                         <div class="play-button-wrapper">
                             <img src="<?= get_template_directory_uri(); ?>/img/dest/play.svg" alt="play" class="play-button">
@@ -26,9 +29,12 @@ $post_id = get_the_ID();
                             play-button__triangle_mobile">
                         </div>
                         <video class="swiper-video" autoplay muted loop playsinline>
-                            <source src="http://kulik.inkdesign.studio/wp-content/uploads/2021/02/gordon.mp4" type="video/mp4" />
+                            <source src="<?= $video ?>" type="video/mp4" />
                         </video>
                     </div>
+                    <?php } if (wpmd_is_notdevice()) { ?>
+                        <div class="swiper-slide"></div>
+                    <?php } ?>
                 </div>
             </div>
             <div class="swiper-pagination swiper-pagination_desktop"></div>

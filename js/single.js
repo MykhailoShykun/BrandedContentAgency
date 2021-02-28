@@ -30,8 +30,6 @@ window.addEventListener('load', () => {
             1200: {
                 slidesPerView: 2,
                 spaceBetween: '50px',
-                loop: true,
-                allowSlidePrev: false,
                 pagination: {
                     el: '.swiper-pagination_desktop',
                 },

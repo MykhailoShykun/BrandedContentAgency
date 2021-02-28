@@ -9,15 +9,19 @@
         </div>
         <div class="video-wrapper">
             <video class="video" autoplay muted loop playsinline>
-                <source src="http://kulik.inkdesign.studio/wp-content/uploads/2021/02/gordon.mp4" type="video/mp4" />
+                <source src="<?= get_field('front-video', $post_id) ?>" type="video/mp4" />
             </video>
             <div class="play-button-wrapper">
                 <img src="<?= get_template_directory_uri(); ?>/img/dest/play.svg" alt="play" class="play-button play-button_desktop">
                 <img src="<?= get_template_directory_uri(); ?>/img/dest/play-triangle.svg" alt=">" class="play-button__triangle play-button__triangle_mobile">
             </div>
         </div>
+        <?php if (!empty(get_the_content($post_id))) { ?>
         <div class="container">
-            <p class="text-block">We create unforgettable memories through multi-sensorial experiences. We create unforgettable memories through multi-sensorial experiences.We create unforgettable memories through multi-sensorial experiences.We create unforgettable memories through multi-sensorial</p>
+            <div class="text-block">
+                <?= get_the_content($post_id); ?>
+            </div>
         </div>
+        <?php } ?>
     </div>
 </section>

@@ -1,1 +1,0 @@
-<div class="front-page-load"></div>
